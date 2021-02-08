@@ -1,0 +1,353 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('bootstrap-icons.css');
+:root {
+    --bs-primary: #2085d3;
+    --bs-info: #00aeef;
+}
+
+body {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: #FAFAFA;
+}
+
+a,
+.pagination a {
+    color: #0a5ca0;
+    text-decoration: none;
+}
+
+a:hover,
+.pagination a:hover {
+    color: #00aeef;
+    text-decoration: underline;
+}
+
+.btn-ss-primary {
+    color: #fff;
+    background-color: #2085d3;
+    border-color: #2085d3;
+}
+
+.btn-ss-primary:hover {
+    color: #fff;
+    background-color: #00aeef;
+    border-color: #00aeef;
+    animation: 500ms reverse ease-in-out;
+    text-decoration: none;
+}
+
+.login-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70vw;
+    height: 100vh;
+    background: #43a6f5;
+}
+
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30vw;
+    height: 50vh;
+    min-width: 300px;
+    min-height: 450px;
+    background-color: #FFF;
+    box-shadow: 0px 5px 10px rgba(32, 133, 211, 0.75);
+    border: 1px solid #AAAAAA;
+    transform: translate(0%, -50%);
+    display: flex;
+}
+
+.login-box {
+    margin: auto;
+    min-width: 300px;
+}
+
+.login-box h3 {
+    color: #2085d3;
+    text-align: center;
+}
+
+.form-check-input:checked {
+    background-color: #2085d3;
+    border-color: #2085d3;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar .container-fluid {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 5px #aaa;
+}
+
+.navbar .logo {
+    display: flex;
+    padding: .3rem 1rem;
+    height: 50px;
+    width: 50%;
+    max-width: 320px;
+    background-color: #2085d3;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #0a5ca0;
+}
+
+.navbar .logo a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navbar .logo button {
+    width: 40px;
+    display: flex;
+    background: transparent;
+    border: 0px;
+    color: #FFF;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+.navbar .navigator {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: .3rem 1rem;
+    border-bottom: 1px solid #aaa;
+    justify-content: space-between;
+}
+
+.navbar .navigator .breadcrumb {
+    align-items: center;
+    height: 36px;
+}
+
+.navbar .navigator .avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid #AAAAAA;
+    margin-right: 10px;
+}
+
+#page-nav {
+    position: absolute;
+    background-color: #43a6f5;
+    display: flex;
+    min-height: 100%;
+    width: 320px;
+    left: 0;
+    animation: 500ms reverse ease-in-out;
+    border-right: 1px solid #0f69ad;
+    box-shadow: 0px 0px 5px #bbb;
+}
+
+#page-nav ul {
+    width: 100%;
+}
+
+#page-nav ul,
+#page-nav li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#page-nav li.hilight {
+    color: #FFF;
+    background-color: #0f69ad;
+    font-size: 15px;
+    padding: 5px 20px;
+}
+
+#page-nav li a {
+    display: flex;
+    padding: 5px 20px;
+    color: #2085d3;
+    text-decoration: none;
+    background: linear-gradient(#f1f1f1, #FFF);
+    line-height: 40px;
+    height: 50px;
+    border-bottom: 1px solid #2085d3;
+}
+
+#page-nav li a i {
+    font-size: 20px;
+    float: left;
+    margin: -5px 5px 0px 0px;
+    color: #0a5ca0;
+    padding-right: 10px;
+}
+
+#page-nav li a:hover {
+    color: #FFF;
+    background: linear-gradient(#0b74c5, #43a6f5);
+    animation: background 0.5s reverse ease;
+}
+
+#page-nav li a:hover i {
+    color: #FFF;
+}
+
+#page {
+    margin-left: 320px;
+    padding: 10px;
+}
+
+#page i.bi {
+    float: left;
+    margin-top: -3px;
+    margin-right: 5px;
+}
+
+#page .container-fluid {
+    padding-top: 10px;
+}
+
+.collapse-menu .navbar .logo {
+    width: 82px;
+    justify-content: center;
+}
+
+.collapse-menu .navbar .logo a {
+    display: none;
+}
+
+.collapse-menu #page-nav {
+    width: 80px;
+}
+
+.collapse-menu #page-nav li a span {
+    display: none;
+}
+
+.collapse-menu #page-nav li a {
+    justify-content: center;
+}
+
+.collapse-menu #page-nav li a i {
+    float: none;
+    padding-right: 0;
+}
+
+.collapse-menu #page-nav li.hilight {
+    font-size: 0;
+}
+
+.collapse-menu #page {
+    margin-left: 80px;
+}
+
+#page table.table {
+    background: #FFF;
+}
+
+#page table.table button,
+#orders .list-group-item button {
+    width: 30px;
+}
+
+#page table.table button i,
+#orders .list-group-item button i {
+    margin-top: -7px;
+    margin-left: -3px;
+    font-size: 12px;
+}
+
+#page .pagination .page-item.active .page-link {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+#page .tab-content {
+    padding: 15px;
+    background-color: #FFF;
+    border: 1px solid #dee2e6;
+    border-top-color: #fff;
+}
+
+@keyframes pagenav-in {
+    from {
+        transform: translate(-350px);
+    }
+    to {
+        transform: translate(0px);
+    }
+}
+
+@keyframes pagenav-out {
+    from {
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(-350px);
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .login-box {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .login-bg {
+        width: 100vw;
+        height: 45vh;
+    }
+    .login-form {
+        transform: translate(-50%, -50%);
+    }
+    .navbar {
+        position: relative;
+        z-index: 99;
+        flex-wrap: wrap;
+    }
+    .navbar .logo {
+        display: flex;
+        width: 100% !important;
+        max-width: 100%;
+    }
+    .collapse-menu .navbar .container-fluid {
+        box-shadow: none;
+    }
+    .collapse-menu .navbar .logo a {
+        display: block;
+    }
+    .navbar .navigator {
+        justify-content: center;
+        display: none;
+    }
+    #page-nav {
+        height: 100vh;
+        border-right: 1px solid #0a5ca0;
+        animation: pagenav-out .5s forwards ease-in-out;
+    }
+    .collapse-menu #page-nav {
+        width: 320px;
+        box-shadow: 25vw 0px 100vw 100vw rgba(10, 92, 160, .9);
+        animation: pagenav-in .5s forwards ease-in-out;
+    }
+    .collapse-menu .navbar .logo {
+        justify-content: space-between;
+    }
+    .collapse-menu #page-nav li a {
+        justify-content: flex-start;
+    }
+    .collapse-menu #page-nav li a span {
+        display: inline-block;
+    }
+    .collapse-menu #page-nav li.hilight {
+        font-size: unset;
+    }
+    #page {
+        margin-left: 0px;
+    }
+}
